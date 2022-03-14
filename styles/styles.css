@@ -286,13 +286,11 @@ footer {
 }
 
 h1 {
-  font-size: 11.12rem;
-  line-height: 10rem;
+  font-size: 5rem;
 }
 
 h1 span {
-  font-size: 6.2rem;
-  letter-spacing: 0.67rem;
+  font-size: 3.5rem;
 }
 
 h1 .subpage {
@@ -405,10 +403,35 @@ img {
   display: inline-block;
 }
 
+.border-left,
+.border-right {
+  position: relative;
+}
+
+.border-left::before,
+.border-right::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #50E3C2;
+  display: block;
+  position: absolute;
+  top: 10px;
+  z-index: -10;
+}
+
+.border-left::before {
+  left: -10px;
+}
+
+.border-right::after {
+  right: -10px;
+}
+
 header {
   background-image: url("../assets/home-image-1.jpg");
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   position: relative;
 }
 header .wrapper {
@@ -423,18 +446,23 @@ header .wrapper {
           align-items: center;
 }
 
+nav label, nav ul a {
+  color: white;
+}
+nav label:hover, nav label:focus, nav ul a:hover, nav ul a:focus {
+  color: #50E3C2;
+}
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 nav ul a {
   display: inline-block;
   padding-left: 50px;
-  color: white;
 }
-nav ul a:hover, nav ul a:focus {
-  color: #50E3C2;
+
+[type=checkbox] {
+  opacity: 0;
+  position: absolute;
 }
 
 .main-header {
@@ -450,6 +478,7 @@ nav ul a:hover, nav ul a:focus {
   height: 90%;
 }
 .main-header div {
+  display: none;
   position: absolute;
   width: 45%;
   left: 0;
@@ -458,8 +487,6 @@ nav ul a:hover, nav ul a:focus {
 
 h1 {
   z-index: 10;
-  margin-right: 200px;
-  margin-left: auto;
 }
 h1 span {
   display: block;

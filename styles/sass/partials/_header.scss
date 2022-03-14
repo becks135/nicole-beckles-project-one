@@ -1,7 +1,8 @@
 header {
     background-image: url("../assets/home-image-1.jpg");
     background-size: cover;
-    height:800px;
+    // height:800px;
+    height:100vh;
 
     .wrapper{
         display:flex;
@@ -11,11 +12,8 @@ header {
     position: relative;
 }
 
-nav ul{
-    display:flex;
-    a {
-        display:inline-block;
-        padding-left:50px;
+nav {
+    label, ul a{
         color:white;
 
         &:hover,
@@ -23,6 +21,18 @@ nav ul{
             color:$greenish-cyan;
         }
     }
+    ul{
+        display:none;
+        a {
+            display:inline-block;
+            padding-left:50px;
+        }
+    }
+}
+
+[type="checkbox"]{
+    opacity: 0;
+    position:absolute;
 }
 
 .main-header{
@@ -32,6 +42,7 @@ nav ul{
     height:90%;
 
     div{
+        display:none;
         position:absolute;
         width:45%;
         left:0;
@@ -41,8 +52,10 @@ nav ul{
 
 h1{
     z-index:10;
-    margin-right:200px;
-    margin-left:auto;
+    // margin-right:200px;
+    // margin-left:auto;
+
+    // text-align:center;
 
     span {
         display: block;
