@@ -1,0 +1,17 @@
+.wrapper{
+    max-width: 1150px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: $twilight-blue;
+    color:white;
+    padding: 10px 20px;
+    display: inline-block;
+
+    &:hover,
+    &:focus{
+        background-color: $spruce;
+    }
+}

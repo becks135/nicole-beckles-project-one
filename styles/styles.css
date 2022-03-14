@@ -365,3 +365,36 @@ nav {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 1150px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #063974;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.button:hover, .button:focus {
+  background-color: #0C5F4C;
+}
