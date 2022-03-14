@@ -287,6 +287,7 @@ footer {
 
 h1 {
   font-size: 11.12rem;
+  line-height: 10rem;
 }
 
 h1 span {
@@ -397,4 +398,69 @@ a {
 }
 .button:hover, .button:focus {
   background-color: #0C5F4C;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+header {
+  background-image: url("../assets/home-image-1.jpg");
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul a {
+  display: inline-block;
+  padding-left: 50px;
+  color: white;
+}
+nav ul a:hover, nav ul a:focus {
+  color: #50E3C2;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+}
+.main-header div {
+  position: absolute;
+  width: 45%;
+  left: 0;
+  bottom: -150px;
+}
+
+h1 {
+  z-index: 10;
+  margin-right: 200px;
+  margin-left: auto;
+}
+h1 span {
+  display: block;
 }

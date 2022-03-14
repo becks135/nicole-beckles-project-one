@@ -1,0 +1,50 @@
+header {
+    background-image: url("../assets/home-image-1.jpg");
+    background-size: cover;
+    height:800px;
+
+    .wrapper{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    position: relative;
+}
+
+nav ul{
+    display:flex;
+    a {
+        display:inline-block;
+        padding-left:50px;
+        color:white;
+
+        &:hover,
+        &:focus{
+            color:$greenish-cyan;
+        }
+    }
+}
+
+.main-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:90%;
+
+    div{
+        position:absolute;
+        width:45%;
+        left:0;
+        bottom:-150px;
+    }
+}
+
+h1{
+    z-index:10;
+    margin-right:200px;
+    margin-left:auto;
+
+    span {
+        display: block;
+    }
+}
