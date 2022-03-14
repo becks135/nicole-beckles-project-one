@@ -1,0 +1,30 @@
+.visit {
+    text-align:center;
+
+    .border-left{
+        margin: 30px auto;
+    }
+}
+
+.gallery .wrapper {
+    display:flex;
+    margin:0;
+    padding: 20px 0;
+    width:100%;
+
+    div:last-child{
+        display:none;
+    }
+}
+
+.about .wrapper>div{
+    display:flex;
+    align-items: flex-start;
+}
+
+.icon-container{
+    height:5.8rem;
+    display:flex;
+    align-items: center;
+    margin-right:10px;
+}

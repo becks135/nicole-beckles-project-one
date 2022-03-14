@@ -18,7 +18,7 @@
 
 img{
     width:100%;
-    display: inline-block;
+    display: block;
 }
 
 .border-left,
@@ -43,4 +43,14 @@ img{
 
 .border-right::after{
     right:-10px;
+}
+
+.green-icon{
+    background-color: $greenish-cyan;
+    color: white;
+    border-radius: 50%;
+    padding:8px;
+    width:38px;
+    height:36px;
+    text-align: center;
 }

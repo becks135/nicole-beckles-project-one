@@ -247,6 +247,11 @@ body {
   letter-spacing: 0.2rem;
 }
 
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
 h1, .button, .logo {
   font-family: "Playfair Display SC", serif;
 }
@@ -400,7 +405,7 @@ a {
 
 img {
   width: 100%;
-  display: inline-block;
+  display: block;
 }
 
 .border-left,
@@ -426,6 +431,16 @@ img {
 
 .border-right::after {
   right: -10px;
+}
+
+.green-icon {
+  background-color: #50E3C2;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  width: 38px;
+  height: 36px;
+  text-align: center;
 }
 
 header {
@@ -490,4 +505,43 @@ h1 {
 }
 h1 span {
   display: block;
+}
+
+.visit {
+  text-align: center;
+}
+.visit .border-left {
+  margin: 30px auto;
+}
+
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+}
+.gallery .wrapper div:last-child {
+  display: none;
+}
+
+.about .wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.icon-container {
+  height: 5.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
 }

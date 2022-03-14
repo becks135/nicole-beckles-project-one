@@ -10,6 +10,11 @@ body {
     letter-spacing: 0.2rem;
 }
 
+h1,h2,h3,h4{
+    padding:0;
+    margin:0;
+}
+
 h1, .button, .logo {
     font-family: $accent-font, serif;
 }
