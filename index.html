@@ -20,21 +20,28 @@
 </head>
 <body>
     <header>
-        <nav class="wrapper">
+        <div class="wrapper">
 
             <div><p class="logo">Beachstays</p></div>
 
-            <input type="checkbox" id="openSideMenu">
-            <label for="openSideMenu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="open-side-menu">
+            <label for="open-side-menu"><i class="fa-solid fa-bars"></i></label>
             
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="">About</a></li> <!--TODO where does this link to?-->
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+            <nav class="slide-out-nav">
+                <div class="button-container">
+                    <button id="close-menu-button">x</button>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li> <!--TODO where does this link to?-->
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>   
+            </nav>
+
             
-        </nav> <!--.wrapper end-->
+            
+        </div> <!--.wrapper end-->
 
         <div class="main-header">
             <div>
@@ -66,7 +73,7 @@
         </div><!--.wrapper end-->
     </section><!--.gallery end-->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="wrapper">
             <div>
                 <!-- TODO - check if to hide icon from screen reader -->
@@ -140,5 +147,7 @@
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
