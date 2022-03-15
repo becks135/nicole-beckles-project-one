@@ -476,10 +476,14 @@ header .wrapper ul a {
   padding-left: 50px;
 }
 
+#slide-out-button {
+  background-color: transparent;
+  border: none;
+}
+
 .slide-out-nav {
   position: absolute;
   right: 0;
-  left: -1000px;
   top: 0;
   bottom: 0;
   z-index: 20;
@@ -501,13 +505,6 @@ header .wrapper ul a {
 }
 .slide-out-nav a:hover, .slide-out-nav a:focus {
   background-color: #0C5F4C;
-}
-
-[type=checkbox] {
-  position: absolute;
-}
-[type=checkbox]:checked ~ .slide-out-nav {
-  left: 0;
 }
 
 .main-header {

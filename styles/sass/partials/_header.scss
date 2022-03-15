@@ -30,11 +30,15 @@ header {
     position: relative;
 }
 
+#slide-out-button {
+    background-color: transparent;
+    border:none;
+}
+
 .slide-out-nav {
     // display:none;
     position:absolute;
     right:0;
-    left:-1000px;
     top:0;
     bottom:0;
     z-index: 20;
@@ -65,14 +69,14 @@ header {
 
 
 
-[type="checkbox"]{
-    // opacity: 0;
-    position:absolute;
+// [type="checkbox"]{
+//     // opacity: 0;
+//     position:absolute;
 
-    &:checked ~ .slide-out-nav{
-        left:0;
-    }
-}
+//     &:checked ~ .slide-out-nav{
+//         left:0;
+//     }
+// }
 
 
 

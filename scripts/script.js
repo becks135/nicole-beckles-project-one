@@ -1,8 +1,12 @@
 const closeNavButton = document.getElementById("close-menu-button");
+const slideOutMenuButton = document.getElementById("slide-out-button")
+const slideOutMenu = document.getElementsByClassName("slide-out-nav");
 
-function closeSlideoutMenu() {
-    const slideOutMenu = document.getElementsByClassName("slide-out-nav");
-    slideOutMenu[0].style.display = "none";
-}
 
-closeNavButton.addEventListener("click",()=>{closeSlideoutMenu()});
+closeNavButton.addEventListener("click",()=>{
+    slideOutMenu[0].classList.add("sr-only");
+});
+
+slideOutMenuButton.addEventListener("click", () => {
+    slideOutMenu[0].classList.remove("sr-only");
+});
