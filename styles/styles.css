@@ -501,6 +501,7 @@ header .wrapper ul a {
 }
 .slide-out-nav a {
   width: 100%;
+  font-size: 3rem;
   padding: 20px 0;
 }
 .slide-out-nav a:hover, .slide-out-nav a:focus {
