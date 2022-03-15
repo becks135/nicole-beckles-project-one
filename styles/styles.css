@@ -247,7 +247,7 @@ body {
   letter-spacing: 0.2rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
 }
@@ -398,6 +398,7 @@ a {
   color: white;
   padding: 10px 20px;
   display: inline-block;
+  margin: 20px auto 30px auto;
 }
 .button:hover, .button:focus {
   background-color: #0C5F4C;
@@ -509,9 +510,7 @@ h1 span {
 
 .visit {
   text-align: center;
-}
-.visit .border-left {
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .gallery .wrapper {
@@ -533,6 +532,7 @@ h1 span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin: 20px auto;
 }
 
 .icon-container {
@@ -544,4 +544,16 @@ h1 span {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
+}
+
+.plan-ahead,
+.new-locations,
+.free-trip {
+  margin: 30px auto;
+}
+.plan-ahead .wrapper,
+.new-locations .wrapper,
+.free-trip .wrapper {
+  text-align: center;
+  margin-top: 20px;
 }
