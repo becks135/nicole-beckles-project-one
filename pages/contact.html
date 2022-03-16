@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/b9d5b00e65.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Beachstays - Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+
+            <div><p class="logo">Beachstays</p></div>
+
+            <!-- <input type="checkbox" id="open-side-menu">
+            <label for="open-side-menu"><i class="fa-solid fa-bars"></i></label> -->
+            <button id="slide-out-button"><i class="fa-solid fa-bars"></i></button>
+            
+            <nav class="slide-out-nav sr-only">
+                <div class="button-container">
+                    <button id="close-menu-button">x</button>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li> <!--TODO where does this link to?-->
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>   
+            </nav>
+        </div> <!--.wrapper end-->
+
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+        </div><!--.contact-header end-->
+    </header>
+
+    <main>
+        <section class="get-in-touch wrapper">
+            <form action="GET">
+                <label for="name" class="sr-only">Enter your name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+    
+                <label for="email" class="sr-only">Enter your email address</label>
+                <input type="email" name="email" id="email" placeholder="Email address">
+    
+                <label for="comment" class="sr-only">Enter your comment</label>
+                <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+    
+                <button type="submit" class="button">Post Comment</button>
+            </form>
+        </section>
+        <section class="contact-info wrapper">
+            <ul class="social-links">
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <span class="sr-only">Link to WhatsApp</span>
+                    </a>
+                </li>
+            </ul> <!--.social-links end-->
+            <address>
+                <a href="mailto:info@email.com">info@email.com</a>
+                <p>
+                    123-456-7890<br>
+                    123 Queen Street West,<br>
+                    Unit 10<br>
+                    Toronto, Ontario<br>
+                    M5V2D5
+                </p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
+    
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
