@@ -69,7 +69,7 @@ header {
 }
 
 
-.main-header{
+.home-heading{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -96,8 +96,24 @@ h1{
     }
 }
 
-.blog-header, 
+
+
+.blog-header,
 .contact-header {
+    min-height:400px;
+    height:70vh;
+}
+
+.blog-header{
+    background-image: url(../assets/blog-image-1.jpg);
+}
+
+.contact-header{
+    background-image: url(../assets/contact-image-1.jpg);
+}
+
+.blog-heading, 
+.contact-heading {
     display:flex;
     align-items: center;
     height:90%;
