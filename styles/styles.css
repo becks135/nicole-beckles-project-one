@@ -259,12 +259,12 @@ h1, .button, .logo {
   font-style: italic;
 }
 
-h1 .subpage,
+.subpage,
 h1 span {
   font-family: "Lato";
 }
 
-h1 .subpage,
+.subpage,
 h1 span,
 h2,
 h3,
@@ -301,9 +301,10 @@ h1 span {
   font-size: 3.5rem;
 }
 
-h1 .subpage {
+.subpage {
   font-size: 8.7rem;
   letter-spacing: 0.9rem;
+  color: white;
 }
 
 h2,
@@ -388,6 +389,10 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+body {
+  background-color: #FAFFFE;
 }
 
 .wrapper {
