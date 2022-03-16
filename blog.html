@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/b9d5b00e65.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Beachstays Blog</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+
+            <div><p class="logo">Beachstays</p></div>
+
+            <!-- <input type="checkbox" id="open-side-menu">
+            <label for="open-side-menu"><i class="fa-solid fa-bars"></i></label> -->
+            <button id="slide-out-button"><i class="fa-solid fa-bars"></i></button>
+            
+            <nav class="slide-out-nav sr-only">
+                <div class="button-container">
+                    <button id="close-menu-button">x</button>
+                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li> <!--TODO where does this link to?-->
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>   
+            </nav>
+        </div> <!--.wrapper end-->
+
+        <div class="blog-header">
+            <h1>Blog</h1>
+        </div><!--.blog-header end-->
+    </header>
+    
+    <section class="blog-post-section">
+        <div>
+            <img src="./assets/post-image.jpg" alt="side view of blue wooden beach house">
+        </div>
+        <article class="blog-post wrapper">
+            <h2>Five days of ocean seas</h2>
+            <p>Monday January 21st, 2019 by <span>Bora</span></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus esse repellendus nesciunt reiciendis, laboriosam nisi fugiat incidunt commodi! Magnam neque beatae hic excepturi qui unde, libero dolorem, saepe laboriosam quod ea enim delectus amet similique.</p>
+            <p>Deleniti, quos molestiae atque voluptatibus nihil rerum deserunt minima eaque ex voluptate nesciunt expedita modi sint voluptatem adipisci animi repellat ullam hic necessitatibus soluta doloremque doloribus sapiente voluptatum. Tempore voluptates animi nulla est, placeat dolores. Explicabo ab vero sequi repudiandae!</p>
+            <p>Repellat laboriosam ratione at quidem laborum? Amet provident eos autem totam hic dolorem deserunt nulla nesciunt dolor recusandae modi dicta perspiciatis, quaerat excepturi sint laborum, architecto neque deleniti quidem? Repudiandae perferendis quis aliquam, exercitationem nihil voluptate nisi recusandae. Odio, laudantium. Consequatur nisi reprehenderit totam rerum ad perferendis voluptas doloremque quia repellat reiciendis. Sint, animi. Unde nesciunt maxime culpa.</p>
+            <p>Quas suscipit facilis iure eveniet cum perferendis, recusandae non incidunt nulla repellendus est aliquid dolore. Minima natus recusandae id a voluptate cumque voluptates minus maiores dolores!</p>
+        </article>
+        <section class="comments">
+            <div class="wrapper">
+                <h3>Comments:</h3>
+                <div class="comment-container">
+                    <div><img src="./assets/comment-image.jpg" alt="headshot of man in front of wooden wall"></div>
+                    <h4>Tuesday October 9th, 2019 by Reyansh</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quod vel iure ut aliquid autem blanditiis iusto numquam adipisci, perspiciatis pariatur aspernatur, nam illum totam nesciunt velit minus reprehenderit ipsam voluptas amet quasi hic ratione!</p>
+                </div>
+
+                <div class="comment-container">
+                    <div><img src="./assets/comment-image2.jpg" alt="headshot of woman wearing reflective sunglasses in front of palm tree"></div>
+                    <h4>Wednesday October 10th, 2019 by Olivia</h4>
+                    <p>Non facere saepe at voluptas quo fugiat quos iure suscipit quas quod minima, vel expedita itaque vitae libero sed incidunt necessitatibus eaque pariatur, doloremque voluptatibus?</p>
+                </div>
+
+                <form action="GET">
+                    <label for="name" class="sr-only">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+
+                    <label for="email" class="sr-only">Enter your email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+
+                    <label for="comment" class="sr-only">Enter your comment</label>
+                    <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+
+                    <button type="submit" class="button">Post Comment</button>
+                </form>
+            </div><!--.wrapper end-->
+        </section> <!--.comments end-->
+    </section> <!--.blog-post-section end-->
+    <aside>
+        <div><img src="./assets/sidebar-image.jpg" alt="white wooden beach house with deck leading to ocean, in front of lush green forest"></div>
+        <h4>Our mission</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis libero illum laboriosam! Dolor incidunt necessitatibus suscipit? Odit!</p>
+        <h4>Recent Posts</h4>
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Quia porro dolores ex.</li>
+            <li>Nulla omnis unde magnam!</li>
+            <li>Nam nisi debitis veniam.</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>
