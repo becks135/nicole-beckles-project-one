@@ -628,6 +628,10 @@ h1 span {
   display: -ms-flexbox;
   display: flex;
 }
+.social-links i {
+  width: 25px;
+  height: 25px;
+}
 
 .contact-info a {
   padding: 10px 10px 10px 0;
