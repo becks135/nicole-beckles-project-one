@@ -291,6 +291,9 @@ h4 {
 
 footer {
   color: white;
+  background-color: #2C2C2C;
+  text-align: center;
+  line-height: 4.8rem;
 }
 
 h1 {
@@ -452,6 +455,12 @@ img {
   text-align: center;
 }
 
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   background-image: url("../assets/home-image-1.jpg");
   background-size: cover;
@@ -540,6 +549,17 @@ h1 span {
   display: block;
 }
 
+.blog-header,
+.contact-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+}
+
 .visit {
   text-align: center;
   margin: 40px auto;
@@ -607,6 +627,11 @@ textarea {
   margin-top: 30px;
 }
 
+form {
+  border: 1px red solid;
+  background-color: white;
+  padding: 30px;
+}
 form button {
   width: 100%;
 }

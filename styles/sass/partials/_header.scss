@@ -95,3 +95,10 @@ h1{
         display: block;
     }
 }
+
+.blog-header, 
+.contact-header {
+    display:flex;
+    align-items: center;
+    height:90%;
+}
