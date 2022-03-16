@@ -37,3 +37,30 @@
         margin-top: 20px;
     }
 }
+
+// contact info page
+
+.contact-info{
+    margin-top:30px;
+}
+
+.social-links{
+    display:flex;    
+}
+
+.contact-info{
+    a{
+        padding:10px 10px 10px 0;
+        &:hover,
+        &focus{
+            color:$greenish-cyan;
+        }
+    }
+
+    address{
+        display:flex;
+        flex-direction:column;
+        font-style: normal;
+    }
+
+}

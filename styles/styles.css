@@ -294,6 +294,7 @@ footer {
   background-color: #2C2C2C;
   text-align: center;
   line-height: 4.8rem;
+  margin-top: 20px;
 }
 
 h1 {
@@ -453,12 +454,6 @@ img {
   width: 38px;
   height: 36px;
   text-align: center;
-}
-
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 header {
@@ -624,6 +619,33 @@ h1 span {
   margin-top: 20px;
 }
 
+.contact-info {
+  margin-top: 30px;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info a {
+  padding: 10px 10px 10px 0;
+}
+.contact-info a:hover, .contact-info afocus {
+  color: #50E3C2;
+}
+.contact-info address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+}
+
 input, textarea {
   border: #50E3C2 2px solid;
   padding: 25px;
@@ -642,10 +664,12 @@ textarea {
 }
 
 form {
-  border: 1px red solid;
   background-color: white;
-  padding: 30px;
 }
 form button {
   width: 100%;
+}
+
+.contact-form {
+  padding-right: 25px;
 }
