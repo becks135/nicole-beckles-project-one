@@ -303,7 +303,8 @@ h1 {
 }
 
 h1 span {
-  font-size: 3.5rem;
+  font-size: 6.2rem;
+  letter-spacing: 0.67rem;
 }
 
 .subpage {
@@ -422,29 +423,14 @@ img {
   display: block;
 }
 
-.border-left,
-.border-right {
-  position: relative;
+.border-left img {
+  -webkit-box-shadow: -20px 20px #50E3C2;
+          box-shadow: -20px 20px #50E3C2;
 }
 
-.border-left::before,
-.border-right::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #50E3C2;
-  display: block;
-  position: absolute;
-  top: 10px;
-  z-index: -10;
-}
-
-.border-left::before {
-  left: -10px;
-}
-
-.border-right::after {
-  right: -10px;
+.border-right img {
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
 }
 
 .green-icon {
@@ -573,9 +559,19 @@ h1 span {
   height: 90%;
 }
 
-.visit {
-  text-align: center;
-  margin: 40px auto;
+.visit .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.visit .wrapper .visit-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  padding-right: 80px;
 }
 
 .gallery .wrapper {
