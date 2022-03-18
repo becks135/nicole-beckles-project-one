@@ -298,7 +298,8 @@ footer {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 11.12rem;
+  line-height: 10rem;
 }
 
 h1 span {
@@ -459,28 +460,36 @@ img {
 header {
   background-image: url("../assets/home-image-1.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 800px;
+  margin-bottom: 200px;
   position: relative;
 }
-header .wrapper {
+header .top-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
 }
-header .wrapper label, header .wrapper ul a, header .wrapper button {
+header .top-navigation ul a, header .top-navigation button {
   color: white;
 }
-header .wrapper label:hover, header .wrapper label:focus, header .wrapper ul a:hover, header .wrapper ul a:focus, header .wrapper button:hover, header .wrapper button:focus {
+header .top-navigation ul a:hover, header .top-navigation ul a:focus, header .top-navigation button:hover, header .top-navigation button:focus {
   color: #50E3C2;
 }
-header .wrapper ul a {
+header .top-navigation .top-navigation-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .top-navigation .top-navigation-links a {
   display: inline-block;
   padding-left: 50px;
 }
@@ -488,9 +497,11 @@ header .wrapper ul a {
 #slide-out-button {
   background-color: transparent;
   border: none;
+  display: none;
 }
 
 .slide-out-nav {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -530,7 +541,6 @@ header .wrapper ul a {
   height: 90%;
 }
 .home-heading div {
-  display: none;
   position: absolute;
   width: 45%;
   left: 0;
@@ -542,12 +552,6 @@ h1 {
 }
 h1 span {
   display: block;
-}
-
-.blog-header,
-.contact-header {
-  min-height: 400px;
-  height: 70vh;
 }
 
 .blog-header {
