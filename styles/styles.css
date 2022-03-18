@@ -479,6 +479,10 @@ header .top-navigation .top-navigation-links a {
   display: inline-block;
   padding-left: 50px;
 }
+header .logo {
+  position: relative;
+  z-index: 30;
+}
 
 #slide-out-button {
   background-color: transparent;
@@ -590,14 +594,28 @@ h1 span {
   width: 32%;
 }
 
+.about {
+  padding: 40px 0;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .about .wrapper > div {
+  width: calc(50% - 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 .icon-container {

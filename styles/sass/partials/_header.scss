@@ -30,7 +30,13 @@ header {
         }
     }
     position: relative;
+
+    .logo{
+        position:relative;
+        z-index:30;
+    }
 }
+
 
 #slide-out-button {
     background-color: transparent;
