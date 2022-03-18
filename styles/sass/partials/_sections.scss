@@ -11,14 +11,24 @@
 
 }
 
-.gallery .wrapper {
-    display:flex;
-    margin:0;
-    padding: 20px 0;
-    width:100%;
+.gallery{
+    background-color: $light-light-blue;
+    padding: 60px 0;
+    .wrapper {
+        display:flex;
+        justify-content: space-between;
 
-    div:last-child{
-        display:none;
+        div{
+            width:32%;
+        }
+        
+        // TODO: add these to media queries
+        // margin:0;
+        // padding: 20px 0;
+        // width:100%;
+        // div:last-child{
+        //     display:none;
+        // }
     }
 }
 
