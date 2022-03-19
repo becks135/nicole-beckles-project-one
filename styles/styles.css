@@ -436,12 +436,14 @@ img {
   display: block;
 }
 
-.border-left img {
+.border-left img,
+.border-left form {
   -webkit-box-shadow: -20px 20px #50E3C2;
           box-shadow: -20px 20px #50E3C2;
 }
 
-.border-right img {
+.border-right img,
+.border-right form {
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
 }
@@ -557,12 +559,18 @@ h1 span {
   display: block;
 }
 
+.blog-header,
+.contact-header {
+  height: 600px;
+}
+
 .blog-header {
   background-image: url(../assets/blog-image-1.jpg);
 }
 
 .contact-header {
   background-image: url(../assets/contact-image-1.jpg);
+  margin-bottom: 0px;
 }
 
 .blog-heading,
@@ -573,7 +581,9 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90%;
+  height: 100%;
+  position: relative;
+  top: 70px;
 }
 
 .visit .wrapper {
@@ -689,8 +699,48 @@ h1 span {
   padding: 70px 0;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.get-in-touch {
+  width: 70%;
+}
+.get-in-touch form {
+  position: relative;
+  bottom: 150px;
+}
+
 .contact-info {
-  margin-top: 30px;
+  padding-top: 100px;
+  width: calc(30% - 70px);
+}
+.contact-info a {
+  padding: 10px 10px 10px 0;
+  font-weight: bold;
+}
+.contact-info a:hover, .contact-info afocus {
+  color: #50E3C2;
+}
+
+address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+}
+address a {
+  line-height: 4.5rem;
 }
 
 .social-links {
@@ -701,23 +751,6 @@ h1 span {
 .social-links i {
   width: 25px;
   height: 25px;
-}
-
-.contact-info a {
-  padding: 10px 10px 10px 0;
-}
-.contact-info a:hover, .contact-info afocus {
-  color: #50E3C2;
-}
-.contact-info address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-style: normal;
 }
 
 input, textarea {
@@ -742,8 +775,9 @@ form {
 }
 form button {
   width: 100%;
+  border: 0;
 }
 
 .contact-form {
-  padding-right: 25px;
+  padding: 50px 50px 0px 50px;
 }

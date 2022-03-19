@@ -118,33 +118,49 @@
 // }
 
 // contact info page
-
-.contact-info{
-    margin-top:30px;
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:-50px;
 }
 
-.social-links{
-    display:flex;    
+.get-in-touch{
+    width:70%;
 
-    i {
-        width:25px;
-        height:25px;
+    form{
+        position:relative;
+        bottom:150px;
     }
 }
-
 .contact-info{
+    padding-top:100px; 
+    width:calc(30% - 70px);
+
     a{
         padding:10px 10px 10px 0;
+        font-weight: bold;
+
         &:hover,
         &focus{
             color:$greenish-cyan;
         }
     }
+}
 
-    address{
-        display:flex;
-        flex-direction:column;
-        font-style: normal;
+address{
+    a{
+        line-height: 4.5rem;
     }
+    display:flex;
+    flex-direction:column;
+    font-style: normal;
+}
 
+.social-links{
+    display:flex; 
+
+    i {
+        width:25px;
+        height:25px;
+    }
 }

@@ -35,13 +35,18 @@ img{
     display: block;
 }
 
-.border-left img{
+
+
+.border-left img,
+.border-left form{
     box-shadow: -20px 20px $greenish-cyan;
 }
 
-.border-right img{
+.border-right img,
+.border-right form{
     box-shadow: 20px 20px $greenish-cyan;
 }
+
 
 .green-icon{
     background-color: $greenish-cyan;

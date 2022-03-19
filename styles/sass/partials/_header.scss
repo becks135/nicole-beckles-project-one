@@ -113,17 +113,25 @@ h1{
 //     height:70vh;
 // }
 
+.blog-header,
+.contact-header {
+    height:600px;
+}
+
 .blog-header{
     background-image: url(../assets/blog-image-1.jpg);
 }
 
 .contact-header{
     background-image: url(../assets/contact-image-1.jpg);
+    margin-bottom: 0px;
 }
 
 .blog-heading, 
 .contact-heading {
     display:flex;
     align-items: center;
-    height:90%;
+    height:100%;
+    position:relative;
+    top:70px;
 }

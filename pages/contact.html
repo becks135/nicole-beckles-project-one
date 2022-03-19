@@ -54,58 +54,60 @@
     </header>
 
     <main>
-        <section class="get-in-touch wrapper">
-            <form action="GET" class="border-right contact-form">
-                <label for="name" class="sr-only">Enter your name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
-    
-                <label for="email" class="sr-only">Enter your email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
-    
-                <label for="comment" class="sr-only">Enter your comment</label>
-                <textarea name="comment" id="comment" placeholder="Comment" rows="10"></textarea>
-    
-                <button type="submit" class="button">Submit</button>
-            </form>
-        </section>
-        <section class="contact-info wrapper">
-            <ul class="social-links">
-                <li>
-                    <a href="">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        <span class="sr-only">Link to WhatsApp</span>
-                    </a>
-                </li>
-            </ul> <!--.social-links end-->
-            <address>
-                <a href="mailto:info@email.com">info@email.com</a>
-                <br>
-                    123-456-7890<br>
-                    123 Queen Street West,<br>
-                    Unit 10<br>
-                    Toronto, Ontario<br>
-                    M5V2D5
-                </p>
-            </address>
-        </section>
+        <div class="wrapper">
+            <section class="get-in-touch border-right">
+                <form action="GET" class="contact-form">
+                    <label for="name" class="sr-only">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+        
+                    <label for="email" class="sr-only">Enter your email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+        
+                    <label for="comment" class="sr-only">Enter your message</label>
+                    <textarea name="comment" id="comment" placeholder="Message" rows="7"></textarea>
+        
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </section><!--.get-in-touch end-->
+            <section class="contact-info">
+                <ul class="social-links">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">Link to WhatsApp</span>
+                        </a>
+                    </li>
+                </ul> <!--.social-links end-->
+                <address>
+                    <a href="mailto:info@email.com">info@email.com</a>
+                    <br>
+                        123-456-7890<br>
+                        123 Queen Street West,<br>
+                        Unit 10<br>
+                        Toronto, Ontario<br>
+                        M5V2D5
+                    </p>
+                </address>
+            </section><!--.contact-info end-->
+        </div><!--.wrapper end-->
     </main>
 
     <footer>
