@@ -753,6 +753,39 @@ address a {
   height: 25px;
 }
 
+.blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog-main aside {
+  width: 25%;
+}
+.blog-main > section {
+  width: 65%;
+}
+
+.comment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+.comment-container div:first-child {
+  width: 100px;
+  padding: 20px 0;
+}
+.comment-container div:last-child {
+  width: calc(100% - 150px);
+}
+
 input, textarea {
   border: #50E3C2 2px solid;
   padding: 25px;
