@@ -21,6 +21,12 @@ form {
         border: 0;
     }
     background-color: white;
+
+    div {
+        display:flex;
+        justify-content: space-between;
+        gap:10px;
+    }
 }
 
 .contact-form{
