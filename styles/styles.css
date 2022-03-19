@@ -677,11 +677,16 @@ h1 span {
   top: 80px;
 }
 
-.new-locations .outer-wrapper .text-container {
+.new-locations .text-container {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
   text-align: right;
+}
+
+.free-trip .wrapper {
+  text-align: center;
+  padding: 70px 0;
 }
 
 .contact-info {

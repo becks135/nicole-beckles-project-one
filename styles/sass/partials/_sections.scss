@@ -57,9 +57,6 @@
     margin-right:10px;
 }
 
-
-
-
 .text-container{
     width:55%;
 
@@ -82,14 +79,11 @@
         img{
             height:100%;
             object-fit: cover;
-            
         }
     }
 
     .border-right{
         bottom:80px;
-
-        
     }
 
     .border-left{
@@ -97,11 +91,16 @@
     }
 }
 
-.new-locations .outer-wrapper{
+.new-locations{
     .text-container{
         order:-1;
         text-align: right;
     }
+}
+
+.free-trip .wrapper{
+    text-align: center;
+    padding:70px 0;
 }
 
 
