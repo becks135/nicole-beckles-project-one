@@ -583,7 +583,7 @@ h1 span {
           align-items: center;
   height: 100%;
   position: relative;
-  top: 70px;
+  top: 20px;
 }
 
 .visit .wrapper {
@@ -699,7 +699,7 @@ h1 span {
   padding: 70px 0;
 }
 
-.wrapper {
+.contact-info-main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,7 +710,7 @@ h1 span {
 }
 
 .get-in-touch {
-  width: 70%;
+  width: 65%;
 }
 .get-in-touch form {
   position: relative;
@@ -719,7 +719,7 @@ h1 span {
 
 .contact-info {
   padding-top: 100px;
-  width: calc(30% - 70px);
+  width: calc(35% - 100px);
 }
 .contact-info a {
   padding: 10px 10px 10px 0;

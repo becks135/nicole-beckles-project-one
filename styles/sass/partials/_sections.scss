@@ -118,14 +118,14 @@
 // }
 
 // contact info page
-.wrapper{
+.contact-info-main .wrapper{
     display:flex;
     justify-content: space-between;
     margin-bottom:-50px;
 }
 
 .get-in-touch{
-    width:70%;
+    width:65%;
 
     form{
         position:relative;
@@ -134,7 +134,7 @@
 }
 .contact-info{
     padding-top:100px; 
-    width:calc(30% - 70px);
+    width:calc(35% - 100px);
 
     a{
         padding:10px 10px 10px 0;
