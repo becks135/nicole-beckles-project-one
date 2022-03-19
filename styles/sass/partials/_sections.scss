@@ -46,6 +46,8 @@
             margin:20px 0;
         }
     }
+
+    margin-bottom:100px;
 }
 
 .icon-container{
@@ -55,16 +57,66 @@
     margin-right:10px;
 }
 
-.plan-ahead,
-.new-locations,
-.free-trip {
-    margin:30px auto;
 
-    .wrapper{
-        text-align: center;
-        margin-top: 20px;
+
+
+.text-container{
+    width:55%;
+
+    div{
+        margin:0 auto;
+        width:65%;
     }
 }
+
+.plan-ahead,
+.new-locations{
+    background-color: $light-light-blue;
+    padding:30px 0 50px 0;
+
+    .img-container{
+        width:45%;
+        height:calc(100% + 80px);
+        position:relative;
+
+        img{
+            height:100%;
+            object-fit: cover;
+            
+        }
+    }
+
+    .border-right{
+        bottom:80px;
+
+        
+    }
+
+    .border-left{
+        top:80px;
+    }
+}
+
+.new-locations .outer-wrapper{
+    .text-container{
+        order:-1;
+        text-align: right;
+    }
+}
+
+
+
+//TODO:add to media queries
+// .plan-ahead,
+// .new-locations,
+// .free-trip {
+//     margin:30px auto;
+
+//     .wrapper{
+//         text-align: center;
+//         margin-top: 20px;
+//     }
+// }
 
 // contact info page
 

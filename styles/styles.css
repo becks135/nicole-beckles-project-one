@@ -407,6 +407,19 @@ body {
   margin: 0 auto;
 }
 
+.outer-wrapper {
+  max-width: 2500px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+}
+
 .button {
   background-color: #063974;
   color: white;
@@ -596,6 +609,7 @@ h1 span {
 
 .about {
   padding: 40px 0;
+  margin-bottom: 100px;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -629,16 +643,45 @@ h1 span {
   margin-right: 10px;
 }
 
-.plan-ahead,
-.new-locations,
-.free-trip {
-  margin: 30px auto;
+.text-container {
+  width: 55%;
 }
-.plan-ahead .wrapper,
-.new-locations .wrapper,
-.free-trip .wrapper {
-  text-align: center;
-  margin-top: 20px;
+.text-container div {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.plan-ahead,
+.new-locations {
+  background-color: #D2F9F1;
+  padding: 30px 0 50px 0;
+}
+.plan-ahead .img-container,
+.new-locations .img-container {
+  width: 45%;
+  height: calc(100% + 80px);
+  position: relative;
+}
+.plan-ahead .img-container img,
+.new-locations .img-container img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.plan-ahead .border-right,
+.new-locations .border-right {
+  bottom: 80px;
+}
+.plan-ahead .border-left,
+.new-locations .border-left {
+  top: 80px;
+}
+
+.new-locations .outer-wrapper .text-container {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  text-align: right;
 }
 
 .contact-info {
