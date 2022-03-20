@@ -705,6 +705,9 @@ h1 span {
   text-align: center;
   padding: 70px 0;
 }
+.free-trip .wrapper h3 {
+  color: #0C5F4C;
+}
 
 .contact-info-main .wrapper {
   display: -webkit-box;
@@ -732,7 +735,7 @@ h1 span {
   padding: 10px 10px 10px 0;
   font-weight: bold;
 }
-.contact-info a:hover, .contact-info afocus {
+.contact-info a:hover, .contact-info a:focus {
   color: #50E3C2;
 }
 
@@ -782,6 +785,12 @@ address a {
 .blog-main > section {
   width: 65%;
 }
+.blog-main h3 {
+  color: #2C2C2C;
+}
+.blog-main h4 {
+  color: #063974;
+}
 
 .blog-post-section > div:first-child {
   outline: 5px #50E3C2 solid;
@@ -792,6 +801,14 @@ address a {
 .blog-post-section .border-right {
   position: relative;
   bottom: 40px;
+}
+
+.post-date {
+  color: #063974;
+  font-style: italic;
+}
+.post-date span {
+  font-weight: bold;
 }
 
 .blog-post,

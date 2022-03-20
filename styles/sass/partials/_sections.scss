@@ -101,6 +101,10 @@
 .free-trip .wrapper{
     text-align: center;
     padding:70px 0;
+
+    h3{
+        color: $spruce;
+    }
 }
 
 
@@ -141,7 +145,7 @@
         font-weight: bold;
 
         &:hover,
-        &focus{
+        &:focus{
             color:$greenish-cyan;
         }
     }
@@ -186,7 +190,14 @@ address{
 
     &>section{
         width:65%;
-        
+    }
+
+    h3{
+        color:$black;
+    }
+
+    h4{
+        color:$twilight-blue;
     }
 }
 
@@ -201,6 +212,14 @@ address{
     .border-right{
         position:relative;
         bottom:40px;
+    }
+}
+
+.post-date{
+    color: $twilight-blue;
+    font-style: italic;
+    span {
+        font-weight: bold;
     }
 }
 
