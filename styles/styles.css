@@ -562,6 +562,7 @@ h1 span {
 .blog-header,
 .contact-header {
   height: 600px;
+  margin-bottom: 0px;
 }
 
 .blog-header {
@@ -570,7 +571,6 @@ h1 span {
 
 .contact-header {
   background-image: url(../assets/contact-image-1.jpg);
-  margin-bottom: 0px;
 }
 
 .blog-heading,
@@ -583,7 +583,7 @@ h1 span {
           align-items: center;
   height: 100%;
   position: relative;
-  top: 20px;
+  top: 15px;
 }
 
 .visit .wrapper {
@@ -768,11 +768,30 @@ address a {
   width: 65%;
 }
 
-.blog-post {
-  outline: 2px #50E3C2 solid;
-  margin-right: 0;
+.blog-post-section > div:first-child {
+  outline: 5px #50E3C2 solid;
+  outline-offset: 15px;
+  position: relative;
+  bottom: 125px;
+}
+.blog-post-section .border-right {
+  position: relative;
+  bottom: 40px;
 }
 
+.blog-post,
+.comments {
+  margin-left: 7.5vw;
+  max-width: 747.5px;
+}
+
+@media (min-width: 1350px) {
+  .blog-post,
+.comments {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
 .comment-container {
   display: -webkit-box;
   display: -ms-flexbox;

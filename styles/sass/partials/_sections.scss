@@ -176,13 +176,40 @@ address{
 
     &>section{
         width:65%;
+        
     }
 }
 
-.blog-post{
-    outline: 2px $greenish-cyan solid;
-    margin-right:0;
+.blog-post-section{
+    &>div:first-child{
+        outline: 5px $greenish-cyan solid;
+        outline-offset: 15px;
+        position:relative;
+        bottom:125px;
+    }
+
+    .border-right{
+        position:relative;
+        bottom:40px;
+    }
 }
+
+//styles for wrapper around blog post and comments
+.blog-post,
+.comments{
+    margin-left:7.5vw;
+    max-width:calc(1150px * 0.65);
+    // margin-right:100px;
+}
+
+@media (min-width:1350px) {
+    .blog-post,
+    .comments{
+        margin-left:auto;
+        margin-right:50px;
+    }
+}
+//end styles for wrapper around blog post and comments
 
 .comment-container{
     display:flex;

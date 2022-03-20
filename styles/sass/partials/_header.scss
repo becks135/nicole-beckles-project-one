@@ -116,6 +116,7 @@ h1{
 .blog-header,
 .contact-header {
     height:600px;
+    margin-bottom: 0px;
 }
 
 .blog-header{
@@ -124,7 +125,6 @@ h1{
 
 .contact-header{
     background-image: url(../assets/contact-image-1.jpg);
-    margin-bottom: 0px;
 }
 
 .blog-heading, 
@@ -133,5 +133,5 @@ h1{
     align-items: center;
     height:100%;
     position:relative;
-    top:20px;
+    top:15px;
 }
