@@ -172,6 +172,16 @@ address{
 
     aside {
         width:25%;
+        padding-top:100px;
+
+        &>div:last-child{
+            padding-right:20px;
+        }
+
+        li::before{
+            content: "• ";
+            color: $greenish-cyan;
+        }
     }
 
     &>section{
