@@ -179,6 +179,11 @@ address{
     }
 }
 
+.blog-post{
+    outline: 2px $greenish-cyan solid;
+    margin-right:0;
+}
+
 .comment-container{
     display:flex;
     width:100%;

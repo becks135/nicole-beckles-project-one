@@ -768,6 +768,11 @@ address a {
   width: 65%;
 }
 
+.blog-post {
+  outline: 2px #50E3C2 solid;
+  margin-right: 0;
+}
+
 .comment-container {
   display: -webkit-box;
   display: -ms-flexbox;
