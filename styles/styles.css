@@ -475,7 +475,12 @@ header {
   margin-bottom: 200px;
   position: relative;
 }
-header .top-navigation {
+header .logo {
+  position: relative;
+  z-index: 30;
+}
+
+.top-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,25 +494,21 @@ header .top-navigation {
           align-items: center;
   padding-top: 30px;
 }
-header .top-navigation ul a, header .top-navigation button {
+.top-navigation ul a, .top-navigation button {
   color: white;
 }
-header .top-navigation ul a:hover, header .top-navigation ul a:focus, header .top-navigation button:hover, header .top-navigation button:focus {
+.top-navigation ul a:hover, .top-navigation ul a:focus, .top-navigation button:hover, .top-navigation button:focus {
   color: #50E3C2;
 }
-header .top-navigation .top-navigation-links {
+.top-navigation .top-navigation-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 30;
 }
-header .top-navigation .top-navigation-links a {
+.top-navigation .top-navigation-links a {
   display: inline-block;
   padding-left: 50px;
-}
-header .logo {
-  position: relative;
-  z-index: 30;
 }
 
 #slide-out-button {
@@ -973,14 +974,18 @@ form div {
   }
 }
 @media (max-width: 900px) {
-  header .top-navigation {
+  header .logo {
+    padding-bottom: 50px;
+  }
+
+  .top-navigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .logo {
-    padding-bottom: 50px;
+  .top-navigation .top-navigation-links a {
+    padding: 0 20px;
   }
 
   h1 {

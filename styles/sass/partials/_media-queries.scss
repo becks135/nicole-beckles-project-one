@@ -84,12 +84,19 @@
 
 @media (max-width:900px){
     header{
-        .top-navigation{
-            flex-direction: column;
-        }
+        
 
         .logo{
             padding-bottom: 50px;
+        }
+    }
+
+    .top-navigation{
+        flex-direction: column;
+        .top-navigation-links{
+            a {
+                padding:0 20px;
+            }
         }
     }
 

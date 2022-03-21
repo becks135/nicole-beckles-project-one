@@ -5,36 +5,38 @@ header {
     margin-bottom:200px;
     // height:100vh;
 
-    .top-navigation{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        padding-top:30px;
-
-        ul a, button{
-            color:white;
-
-            &:hover,
-            &:focus{
-                color:$greenish-cyan;
-            }
-        }
-
-        .top-navigation-links{
-            display:flex;
-            z-index:30;
-            a {
-                display:inline-block;
-                padding-left:50px;
-            }
-        }
-    }
+    
     position: relative;
 
     .logo{
         position:relative;
         z-index:30;
+    }
+}
+
+.top-navigation{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top:30px;
+
+    ul a, button{
+        color:white;
+
+        &:hover,
+        &:focus{
+            color:$greenish-cyan;
+        }
+    }
+
+    .top-navigation-links{
+        display:flex;
+        z-index:30;
+        a {
+            display:inline-block;
+            padding-left:50px;
+        }
     }
 }
 
