@@ -938,36 +938,6 @@ form div {
 .comments {
     margin-left: 0;
   }
-}
-@media (max-width: 950px) {
-  header .top-navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header .logo {
-    padding-bottom: 50px;
-  }
-
-  h1 {
-    font-size: 9rem;
-    line-height: 5rem;
-  }
-
-  h1 span {
-    font-size: 4.5rem;
-    letter-spacing: 0.67rem;
-  }
-
-  .home-heading {
-    height: 70%;
-  }
-
-  .blog-heading,
-.contact-heading {
-    top: -75px;
-  }
 
   .contact-info-main .wrapper {
     -webkit-box-orient: vertical;
@@ -1000,5 +970,35 @@ form div {
 
   address a {
     line-height: 3.2rem;
+  }
+}
+@media (max-width: 900px) {
+  header .top-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .logo {
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 9rem;
+    line-height: 5rem;
+  }
+
+  h1 span {
+    font-size: 4.5rem;
+    letter-spacing: 0.67rem;
+  }
+
+  .home-heading {
+    height: 70%;
+  }
+
+  .blog-heading,
+.contact-heading {
+    top: -75px;
   }
 }
