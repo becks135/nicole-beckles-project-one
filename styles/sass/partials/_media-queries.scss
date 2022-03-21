@@ -55,7 +55,7 @@
     }
 }
 
-@media (max-width:900px){
+@media (max-width:950px){
     header{
         .top-navigation{
             flex-direction: column;
@@ -64,6 +64,17 @@
         .logo{
             padding-bottom: 50px;
         }
+    }
+
+    h1 {
+        font-size: 9rem;
+        line-height: 5rem;
+    }
+
+    h1 span{
+        font-size: 4.5rem;
+        letter-spacing: 0.67rem;
+ 
     }
 
     .home-heading{
