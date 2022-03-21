@@ -1,0 +1,105 @@
+@media (max-width:1200px) {
+    
+    .blog-main{
+        aside {
+            width:27.5%;
+
+            li{
+                font-size:1.9rem;
+            }
+        }
+    }
+
+    .contact-info{
+        width:calc(35% - 80px);
+    }
+
+    address {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:1050px){
+    .blog-main{
+        flex-direction: column;
+
+        aside,
+        &>section
+        {
+            max-width: 1150px;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        aside{
+            padding-top:50px;
+            display:flex;
+            gap:75px;
+
+            img{
+                margin-top:25px;
+                box-shadow: 20px 20px $greenish-cyan;
+            }
+        }
+    }
+
+    .blog-post-section{
+        &>div:first-child{
+            outline:none;
+        }
+    }
+
+    .blog-post,
+    .comments{
+        margin-left:0;
+    }
+}
+
+@media (max-width:900px){
+    header{
+        .top-navigation{
+            flex-direction: column;
+        }
+
+        .logo{
+            padding-bottom: 50px;
+        }
+    }
+
+    .home-heading{
+        height:70%;
+    }
+
+    .blog-heading, 
+    .contact-heading {
+        top:-75px;
+    }
+
+
+    .contact-info-main .wrapper{
+        flex-direction:column;
+
+        section{
+            width:100%;
+        }
+    }
+
+    .contact-info{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top:0;
+    }
+
+    .get-in-touch{
+        margin-bottom:-75px;
+    }
+
+    address{
+        a{
+            line-height: 3.2rem;
+        }
+    }
+}
+

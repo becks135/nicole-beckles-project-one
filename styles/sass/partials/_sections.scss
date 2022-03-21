@@ -143,11 +143,6 @@
     a{
         padding:10px 10px 10px 0;
         font-weight: bold;
-
-        &:hover,
-        &:focus{
-            color:$greenish-cyan;
-        }
     }
 }
 
@@ -185,6 +180,16 @@ address{
         li::before{
             content: "• ";
             color: $greenish-cyan;
+        }
+
+        span {
+            color:$spruce;
+            font-weight: bold;
+            margin-bottom: 100px;
+        }
+
+        h4 {
+            line-height: 8.5rem;
         }
     }
 
@@ -240,6 +245,7 @@ address{
 }
 //end styles for wrapper around blog post and comments
 
+//TODO: font size of comment headers
 .comment-container{
     display:flex;
     width:100%;

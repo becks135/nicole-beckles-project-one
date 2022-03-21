@@ -397,6 +397,9 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+a:hover, a:focus {
+  color: #50E3C2;
+}
 
 body {
   background-color: #FAFFFE;
@@ -496,6 +499,7 @@ header .top-navigation .top-navigation-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 30;
 }
 header .top-navigation .top-navigation-links a {
   display: inline-block;
@@ -735,9 +739,6 @@ h1 span {
   padding: 10px 10px 10px 0;
   font-weight: bold;
 }
-.contact-info a:hover, .contact-info a:focus {
-  color: #50E3C2;
-}
 
 address {
   display: -webkit-box;
@@ -781,6 +782,14 @@ address a {
 .blog-main aside li::before {
   content: "• ";
   color: #50E3C2;
+}
+.blog-main aside span {
+  color: #0C5F4C;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.blog-main aside h4 {
+  line-height: 8.5rem;
 }
 .blog-main > section {
   width: 65%;
@@ -878,4 +887,108 @@ form div {
 
 .contact-form {
   padding: 50px 50px 0px 50px;
+}
+
+@media (max-width: 1200px) {
+  .blog-main aside {
+    width: 27.5%;
+  }
+  .blog-main aside li {
+    font-size: 1.9rem;
+  }
+
+  .contact-info {
+    width: calc(35% - 80px);
+  }
+
+  address {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 1050px) {
+  .blog-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-main aside, .blog-main > section {
+    max-width: 1150px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .blog-main aside {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 75px;
+  }
+  .blog-main aside img {
+    margin-top: 25px;
+    -webkit-box-shadow: 20px 20px #50E3C2;
+            box-shadow: 20px 20px #50E3C2;
+  }
+
+  .blog-post-section > div:first-child {
+    outline: none;
+  }
+
+  .blog-post,
+.comments {
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  header .top-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .logo {
+    padding-bottom: 50px;
+  }
+
+  .home-heading {
+    height: 70%;
+  }
+
+  .blog-heading,
+.contact-heading {
+    top: -75px;
+  }
+
+  .contact-info-main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info-main .wrapper section {
+    width: 100%;
+  }
+
+  .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .get-in-touch {
+    margin-bottom: -75px;
+  }
+
+  address a {
+    line-height: 3.2rem;
+  }
 }

@@ -127,4 +127,9 @@ a {
     color: inherit;
     cursor:pointer;
     transition: 0.3s;
+
+    &:hover,
+    &:focus{
+        color:$greenish-cyan;
+    }
 }
