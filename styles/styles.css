@@ -838,7 +838,8 @@ address a {
 .blog-post h4,
 .comments h4 {
   font-size: 2rem;
-  letter-spacing: 0.22rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.2rem;
 }
 
 @media (min-width: 1350px) {
@@ -856,11 +857,11 @@ address a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 .comment-container div:first-child {
   width: 100px;
-  padding: 20px 0;
+  padding-top: 5px;
 }
 .comment-container div:last-child {
   width: calc(100% - 150px);
@@ -959,6 +960,13 @@ form div {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
+  }
+
+  .comment-container div:first-child {
+    width: 125px;
+  }
+  .comment-container div:last-child {
+    width: calc(100% - 175px);
   }
 
   .contact-info-main .wrapper {
@@ -1113,8 +1121,8 @@ form div {
   }
 
   .subpage {
-    font-size: 7.5rem;
     letter-spacing: 0.7rem;
+    line-height: 7.5rem;
   }
 }
 @media (max-width: 650px) {
@@ -1169,5 +1177,23 @@ form div {
 
   .about {
     margin-bottom: 0;
+  }
+
+  .comment-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comment-container div:first-child {
+    width: 150px;
+  }
+  .comment-container div:last-child {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
   }
 }
