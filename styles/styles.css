@@ -439,6 +439,7 @@ body {
 }
 .button:hover, .button:focus {
   background-color: #0C5F4C;
+  color: white;
 }
 
 button {
@@ -829,6 +830,15 @@ address a {
   margin-left: 7.5vw;
   max-width: 747.5px;
 }
+.blog-post p,
+.comments p {
+  margin-bottom: 20px;
+}
+.blog-post h4,
+.comments h4 {
+  font-size: 2rem;
+  letter-spacing: 0.22rem;
+}
 
 @media (min-width: 1350px) {
   .blog-post,
@@ -941,6 +951,9 @@ form div {
   .blog-post,
 .comments {
     margin-left: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 
   .contact-info-main .wrapper {
@@ -1021,11 +1034,12 @@ form div {
     padding: 0;
   }
   .visit .wrapper .border-left {
-    width: 70%;
-    -ms-flex-item-align: center;
-        align-self: center;
+    display: none;
   }
 
+  .about {
+    margin-bottom: 50px;
+  }
   .about .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1053,11 +1067,21 @@ form div {
     width: 100%;
   }
 
+  .plan-ahead {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  .new-locations {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
   .text-container {
     width: 100%;
   }
   .text-container div {
-    margin: 30px auto;
+    padding-top: 50px;
     width: 100%;
     text-align: center;
   }
@@ -1117,5 +1141,23 @@ form div {
   }
   .top-navigation .top-navigation-links {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  header {
+    height: 100vh;
+    margin-bottom: 50px;
+  }
+
+  .home-heading div {
+    display: none;
+  }
+
+  .about {
+    margin-bottom: 0;
   }
 }

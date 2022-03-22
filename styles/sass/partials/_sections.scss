@@ -174,7 +174,7 @@ address{
             color: $greenish-cyan;
         }
 
-        span {
+        span{
             color:$spruce;
             font-weight: bold;
             margin-bottom: 100px;
@@ -226,6 +226,14 @@ address{
     margin-left:7.5vw;
     max-width:calc(1150px * 0.65);
     // margin-right:100px;
+    p{
+        margin-bottom:20px;
+    }
+
+    h4{
+        font-size: 2rem;
+        letter-spacing: 0.22rem;
+    }
 }
 
 @media (min-width:1350px) {
@@ -237,7 +245,6 @@ address{
 }
 //end styles for wrapper around blog post and comments
 
-//TODO: font size of comment headers
 .comment-container{
     display:flex;
     width:100%;
