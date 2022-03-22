@@ -517,8 +517,11 @@ header .logo {
   display: none;
 }
 
-.slide-out-nav {
+.hidden {
   display: none;
+}
+
+.slide-out-nav {
   position: absolute;
   right: 0;
   top: 0;
@@ -975,7 +978,7 @@ form div {
 }
 @media (max-width: 900px) {
   header .logo {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
   .top-navigation {
@@ -1005,5 +1008,114 @@ form div {
   .blog-heading,
 .contact-heading {
     top: -75px;
+  }
+
+  .visit .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .visit .wrapper .visit-text {
+    padding: 0;
+  }
+  .visit .wrapper .border-left {
+    width: 70%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .wrapper > div {
+    width: 100%;
+  }
+
+  .outer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1150px;
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .plan-ahead .img-container,
+.new-locations .img-container {
+    position: static;
+    width: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+  .text-container div {
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .new-locations .text-container {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+@media (max-width: 750px) {
+  form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog-main aside {
+    padding-top: 0px;
+  }
+  .blog-main aside > div:first-child {
+    display: none;
+  }
+
+  .subpage {
+    font-size: 7.5rem;
+    letter-spacing: 0.7rem;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .gallery .wrapper {
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .gallery .wrapper div {
+    width: 50%;
+  }
+  .gallery .wrapper div:last-child {
+    display: none;
+  }
+
+  #slide-out-button {
+    display: block;
+  }
+
+  .top-navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .top-navigation .top-navigation-links {
+    display: none;
   }
 }
