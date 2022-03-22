@@ -612,6 +612,7 @@ h1 span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 75px;
 }
 .visit .wrapper .visit-text {
   -webkit-box-flex: 1;
@@ -622,7 +623,7 @@ h1 span {
 
 .gallery {
   background-color: #D2F9F1;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 .gallery .wrapper {
   display: -webkit-box;
@@ -1133,6 +1134,9 @@ form div {
     font-size: 6.5rem;
   }
 
+  .gallery {
+    padding: 65px 0;
+  }
   .gallery .wrapper {
     margin: 0;
     padding: 20px 0;
