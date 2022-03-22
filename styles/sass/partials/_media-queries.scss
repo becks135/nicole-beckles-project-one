@@ -1,5 +1,4 @@
 @media (max-width:1200px) {
-    
     .blog-main{
         aside {
             width:27.5%;
@@ -129,7 +128,6 @@
     .visit .wrapper{
         flex-direction: column;
         text-align: center;
-        // align-items: center;
 
         .visit-text{
             padding:0;
@@ -137,8 +135,6 @@
 
         .border-left{
             display:none;
-            // width:70%;
-            // align-self: center;
         }
     }
 
@@ -212,7 +208,6 @@
     }
 
     .subpage{
-        // font-size: 7.5rem;
         letter-spacing: 0.7rem;
         line-height: 7.5rem;
     }
@@ -323,6 +318,5 @@
     footer{
         font-size:1.6rem;
     }
-
 }
 

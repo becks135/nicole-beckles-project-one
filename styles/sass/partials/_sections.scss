@@ -1,14 +1,11 @@
 .visit .wrapper{
-    // text-align:center;
     display:flex;
-    // margin:40px auto;
     justify-content: space-between;
 
     .visit-text{
         flex:1 1 60%;
         padding-right:80px;
     }
-
 }
 
 .gallery{
@@ -38,7 +35,6 @@
             margin:20px 0;
         }
     }
-
     margin-bottom:100px;
 }
 
@@ -99,19 +95,6 @@
     }
 }
 
-
-
-//TODO:add to media queries
-// .plan-ahead,
-// .new-locations,
-// .free-trip {
-//     margin:30px auto;
-
-//     .wrapper{
-//         text-align: center;
-//         margin-top: 20px;
-//     }
-// }
 
 // CONTACT PAGE
 .contact-info-main .wrapper{

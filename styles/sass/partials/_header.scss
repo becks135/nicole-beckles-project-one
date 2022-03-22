@@ -48,7 +48,6 @@ header {
 }
 
 .slide-out-nav {
-    // display:none;
     position:absolute;
     right:0;
     top:0;
@@ -59,7 +58,6 @@ header {
     
     .button-container{
         text-align: right;
-        // z-index:30;
 
         button{
             background-color: $twilight-blue;
@@ -81,7 +79,6 @@ header {
         }
     }
 }
-
 
 .home-heading{
     display:flex;
@@ -105,8 +102,7 @@ h1{
     }
 }
 
-// Sub pages heading styles
-
+// SUB PAGES HEADING STYLES
 .blog-header,
 .contact-header {
     height:600px;
@@ -128,5 +124,4 @@ h1{
     height:100%;
     position:relative;
     top:15px;
-    // z-index:10;
 }
