@@ -45,10 +45,7 @@ header {
     background-color: transparent;
     border:none;
     display:none;
-}
-
-.hidden{
-    display:none;
+    z-index:30;
 }
 
 .slide-out-nav {
@@ -63,12 +60,12 @@ header {
     
     .button-container{
         text-align: right;
+        // z-index:30;
 
         button{
             background-color: $twilight-blue;
             border: none;
             font-size:3rem;
-            cursor: pointer;
         }
     }
 
@@ -141,4 +138,5 @@ h1{
     height:100%;
     position:relative;
     top:15px;
+    // z-index:10;
 }

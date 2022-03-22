@@ -441,6 +441,10 @@ body {
   background-color: #0C5F4C;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   width: 100%;
   display: block;
@@ -515,10 +519,7 @@ header .logo {
   background-color: transparent;
   border: none;
   display: none;
-}
-
-.hidden {
-  display: none;
+  z-index: 30;
 }
 
 .slide-out-nav {
@@ -537,7 +538,6 @@ header .logo {
   background-color: #063974;
   border: none;
   font-size: 3rem;
-  cursor: pointer;
 }
 .slide-out-nav a {
   width: 100%;
