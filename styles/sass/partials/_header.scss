@@ -44,6 +44,7 @@ header {
     border:none;
     display:none;
     z-index:30;
+    font-size: 2.5rem;
 }
 
 .slide-out-nav {
@@ -52,7 +53,7 @@ header {
     right:0;
     top:0;
     bottom:0;
-    z-index: 20;
+    z-index: 100;
     width:100%;
     background-color: $twilight-blue;
     
@@ -64,17 +65,19 @@ header {
             background-color: $twilight-blue;
             border: none;
             font-size:3rem;
+            padding:25px;
         }
     }
 
-    a{
-        width:100%;
+    li a{
+        display:block;
         font-size:3rem;
-        padding: 20px 0;
+        padding: 20px 40px;
 
         &:hover,
         &:focus{
             background-color: $spruce;
+            color:white;
         }
     }
 }
@@ -87,7 +90,6 @@ header {
     height:90%;
 
     div{
-        // display:none;
         position:absolute;
         width:45%;
         left:0;
@@ -97,10 +99,6 @@ header {
 
 h1{
     z-index:10;
-    // margin-right:200px;
-    // margin-left:auto;
-
-    // text-align:center;
 
     span {
         display: block;
@@ -108,12 +106,6 @@ h1{
 }
 
 // Sub pages heading styles
-// TODO add to media queries
-// .blog-header,
-// .contact-header {
-//     min-height:400px;
-//     height:70vh;
-// }
 
 .blog-header,
 .contact-header {

@@ -249,6 +249,16 @@
             display:none;
         }
     }
+
+    header{
+        .logo{
+            padding-bottom: 0;
+        }
+    }
+
+    .contact-form{
+        padding:20px 25px 0px 25px;
+    }
 }
 
 @media(max-width:500px){
@@ -289,8 +299,29 @@
             text-align: center;
             padding-top:15px;
         }
-    
-        
+    }
+
+    .get-in-touch{
+        form{
+            position:sticky;
+        }
+        margin-bottom: 0;
+    }
+
+    .contact-info-main .wrapper{
+        margin-bottom:0px;
+    }
+
+    .contact-form{
+        padding:20px 0px 0px 0px;
+    }
+
+    .border-right form{
+        box-shadow: none;
+    }
+
+    footer{
+        font-size:1.6rem;
     }
 
 }

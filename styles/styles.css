@@ -521,6 +521,7 @@ header .logo {
   border: none;
   display: none;
   z-index: 30;
+  font-size: 2.5rem;
 }
 
 .slide-out-nav {
@@ -528,7 +529,7 @@ header .logo {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 100;
   width: 100%;
   background-color: #063974;
 }
@@ -539,14 +540,16 @@ header .logo {
   background-color: #063974;
   border: none;
   font-size: 3rem;
+  padding: 25px;
 }
-.slide-out-nav a {
-  width: 100%;
+.slide-out-nav li a {
+  display: block;
   font-size: 3rem;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
-.slide-out-nav a:hover, .slide-out-nav a:focus {
+.slide-out-nav li a:hover, .slide-out-nav li a:focus {
   background-color: #0C5F4C;
+  color: white;
 }
 
 .home-heading {
@@ -737,7 +740,7 @@ h1 span {
 }
 
 .contact-info {
-  padding-top: 100px;
+  padding-top: 75px;
   width: calc(35% - 100px);
 }
 .contact-info a {
@@ -1155,6 +1158,14 @@ form div {
   .top-navigation .top-navigation-links {
     display: none;
   }
+
+  header .logo {
+    padding-bottom: 0;
+  }
+
+  .contact-form {
+    padding: 20px 25px 0px 25px;
+  }
 }
 @media (max-width: 500px) {
   h1 {
@@ -1195,5 +1206,29 @@ form div {
     width: 100%;
     text-align: center;
     padding-top: 15px;
+  }
+
+  .get-in-touch {
+    margin-bottom: 0;
+  }
+  .get-in-touch form {
+    position: sticky;
+  }
+
+  .contact-info-main .wrapper {
+    margin-bottom: 0px;
+  }
+
+  .contact-form {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .border-right form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  footer {
+    font-size: 1.6rem;
   }
 }
