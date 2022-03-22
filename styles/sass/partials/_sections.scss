@@ -204,6 +204,7 @@ address{
         outline-offset: 15px;
         position:relative;
         bottom:125px;
+        margin-bottom:-75px;
     }
 
     .border-right{
@@ -258,5 +259,11 @@ address{
 
     div:last-child{
         width:calc(100% - 150px);
+    }
+}
+
+.comments{
+    form, input, textarea{
+        background-color: $ice-blue;
     }
 }

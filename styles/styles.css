@@ -811,6 +811,7 @@ address a {
   outline-offset: 15px;
   position: relative;
   bottom: 125px;
+  margin-bottom: -75px;
 }
 .blog-post-section .border-right {
   position: relative;
@@ -863,6 +864,10 @@ address a {
 }
 .comment-container div:last-child {
   width: calc(100% - 150px);
+}
+
+.comments form, .comments input, .comments textarea {
+  background-color: #FAFFFE;
 }
 
 input, textarea {
