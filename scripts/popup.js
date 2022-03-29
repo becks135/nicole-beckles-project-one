@@ -4,12 +4,12 @@
 
 // let scrollPosition = 0;
 let allowPopup = true;
-const popupContainer = document.querySelector(".popup-background");
+const popupOverlay = document.querySelector(".popup-background");
 
 window.addEventListener("scroll", function () {
     let scrollPosition = window.scrollY;
     if (scrollPosition > 100 && allowPopup) {
-    popupContainer.classList.add("show-popup");
+    popupOverlay.classList.add("show-popup");
 
     //only allow popup to show once
     allowPopup = false; //only pop-up once on page load
@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
 //add event listener to free trip button to display pop-up
 const freeTripButton = document.querySelector(".free-trip-button");
 freeTripButton.addEventListener("click", () => {
-    popupContainer.classList.add("show-popup");
+    popupOverlay.classList.add("show-popup");
   //only allow popup to show once
     allowPopup = false;
 });
@@ -29,7 +29,7 @@ freeTripButton.addEventListener("click", () => {
 // - anywhere on the screen (outside of popup message) clicked;
 // - popup form submitted
 function closePopup() {
-    popupContainer.classList.remove("show-popup");
+    popupOverlay.classList.remove("show-popup");
 }
 
 const closePopupButton = document.querySelector("#close-popup-button");
@@ -41,6 +41,11 @@ mailingListForm.addEventListener("submit", (event) => {
     closePopup();
 });
 
-
+const popupContainer = document.querySelector(".popup-container");
+popupContainer.addEventListener("click", (event) => {
+    if (event.target===popupContainer){
+        closePopup();
+    }
+});
 
 
