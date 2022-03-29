@@ -62,6 +62,32 @@
     </header>
 
     <main>
+        <div class="popup-background">
+            <div class="popup-container">
+                <div class="popup wrapper">
+                    <div class="pop-up-img">
+                        <img src="./assets/sidebar-image.jpg" alt="white wooden beach house with deck leading to ocean, in front of lush green forest">
+                    </div>
+                    <div>
+                        <div class="button-container">
+                            <button id="close-popup-button"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <h2>Join our mailing list for a chance to win a free trip!</h2>
+                        <form class="mailing-list-form">
+                            <div>
+                                <label for="name" class="sr-only">Enter your name</label>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                    
+                                <label for="email" class="sr-only">Enter your email address</label>
+                                <input type="email" name="email" id="email" placeholder="Email address">
+                            </div>
+                            <button type="submit" class="button">Submit</button>
+                        </form>
+                    </div>
+                </div><!--.popup .wrapper end-->
+            </div> <!--.pop-up container end-->
+        </div> <!--.popup-background end-->
+
         <section class="visit">
             <div class="wrapper">
                 <div class="visit-text">
@@ -184,7 +210,7 @@
                     vero molestias maxime dolores itaque error iusto commodi deserunt atque tempore numquam saepe modi,
                     distinctio vel reiciendis. Ex blanditiis odit eligendi praesentium reprehenderit magnam, dolor minus
                     aspernatur accusamus ipsa consectetur.</p>
-                <a href="" class="button">Find out more</a>
+                <button class="free-trip-button button">Find out more</button>
             </div>
         </section><!--.free-trip end-->
     </main>
@@ -194,6 +220,7 @@
     </footer>
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/popup.js"></script>
 </body>
 
 </html>
