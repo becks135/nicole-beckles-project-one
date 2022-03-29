@@ -2,7 +2,6 @@
 //if user scrolls a certain amount
 //display pop-up
 
-// let scrollPosition = 0;
 let allowPopup = true;
 const popupOverlay = document.querySelector(".popup-background");
 
@@ -11,7 +10,6 @@ window.addEventListener("scroll", function () {
     if (scrollPosition > 100 && allowPopup) {
     popupOverlay.classList.add("show-popup");
 
-    //only allow popup to show once
     allowPopup = false; //only pop-up once on page load
     }
 });
@@ -20,14 +18,13 @@ window.addEventListener("scroll", function () {
 const freeTripButton = document.querySelector(".free-trip-button");
 freeTripButton.addEventListener("click", () => {
     popupOverlay.classList.add("show-popup");
-  //only allow popup to show once
     allowPopup = false;
 });
 
 //close pop-up if
 // - x clicked
-// - anywhere on the screen (outside of popup message) clicked;
 // - popup form submitted
+// - anywhere on the screen (outside of popup message) clicked;
 function closePopup() {
     popupOverlay.classList.remove("show-popup");
 }
